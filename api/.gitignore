@@ -10,3 +10,4 @@
 /tests/coverage.xml*
 .phpunit.result.cache
 /.phpunit.cache
+/.env
