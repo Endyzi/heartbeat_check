@@ -4,6 +4,13 @@ type Query {
 
     unhealthyHeartbeats(applicationKeys: [String!]): [Hearbeat!]!
 }
+
+#send List with applicationkeys to filter heartbeats
+type Query {
+  unhealthyHeartbeats(applicationKeys: [String!]): [Heartbeat!] @resolve(class: "App\\GraphQL\Queries\Heartbeat")
+}
+
+
 #need to test this properly , if i need to make a substantial amount of mutations in the future this might not be the most optimal way.
 
 type Mutation {
