@@ -3,7 +3,8 @@
     "type": "project",
     "require": {
         "php": "^8.1",
-        "glesys/butler-service": "^0.24.2"
+        "glesys/butler-service": "^0.24.2",
+        "laravel/sanctum": "^3.3"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.9.2",
